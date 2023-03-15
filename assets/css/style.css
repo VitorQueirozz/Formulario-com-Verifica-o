@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.055);
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.144);
+    min-width: 30%;
+    overflow: auto;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
+}
+
+.formularioTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formularioTexto input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: white;
+    padding: 0 10px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    transition: 0.3s;
+}
+
+.formularioTexto input:focus{
+    border-color: blueviolet;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputs span {
+    color: rgba(255, 0, 0, 0.425);
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.span-required {
+    display: none;
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    transition: 0.3s;
+}
+
+textarea:focus {
+ border-color: blueviolet;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sexo p{
+    color: white;
+}
+.opcoeSexo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.opcoeSexo label{
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.experiencia p {
+    color: white;
+}
+
+.opcaoexpe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.opcaoexpe label{
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    height: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1550px){
+    .opcaoexpe {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .opcoeSexo {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+    main {
+        min-width: 90%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        height: 130vh;
+    }
+}
+

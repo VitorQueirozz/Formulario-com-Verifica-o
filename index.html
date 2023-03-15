@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="central">
+            <h1>Formulário</h1>
+            <form  class='inputsR'id="form">
+                <div class="formularioTexto">
+                    <div class="inputs">
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class='inputsR' oninput="validarNome()" autocomplete="off">
+                        <span class="span-required">Nome deve ter no minimo 3 caracteres</span>
+                    </div>
+                    <div class="inputs">
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" class='inputsR' oninput="validarEmail()" autocomplete="off">
+                        <span class="span-required">Digite um email válido</span>
+                    </div>
+                    <div class="inputs">
+                        <input type="password" name="senha" id="senha"
+                        placeholder="Senha" class='inputsR' oninput="validarSenha()">
+                        <span class="span-required">Digite um senha com no mínimo 8 caracteres</span>
+                    </div>
+                    <div class="inputs">
+                        <input type="password" name="senhaC" id="senhaC" placeholder="Repita a sua senha" class='inputsR' oninput="confirmarSenha()">
+                        <span class="span-required">As senhas devem ser iguais</span>
+                    </div>
+                    <textarea name="texto" id="texto" placeholder="Fale sobre voce" cols="25" rows="7"></textarea>
+                </div>
+                <div class="sexo">
+                    <p>Sexo:</p>
+                    <div class="opcoeSexo">
+                        <div>
+                            <input type="radio" name="sexo" id="sexM">
+                            <label for="sexM">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" id="sexF">
+                            <label for="sexF">Feminino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" id="sexOutro">
+                            <label for="sexOutro">Outro</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiencia">
+                    <p>Quais suas experiências:</p>
+                    <div class="opcaoexpe">
+                        <div>
+                            <input type="checkbox" name="html" id="html">
+                            <label for="html">HTML</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="css" id="css">
+                            <label for="css">CSS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="java" id="java">
+                            <label for="java">JAVASCRIPT</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="php" id="php">
+                            <label for="php">PHP</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="botao">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
